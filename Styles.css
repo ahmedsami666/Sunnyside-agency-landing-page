@@ -1,0 +1,302 @@
+body {
+    margin: 0;
+    font-family: 'Barlow', sans-serif;
+}
+.box1 {
+    background-image: url(./images/desktop/image-header.jpg);
+    color: white;
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 15%;
+    background-position-x: center;
+}
+.box1 h1 {
+    font-size: 4rem;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: start;
+    padding: 3rem;
+    align-items: center;
+}
+.m{
+    justify-self: end;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+}
+.t {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-bottom: 25px solid #fff;
+    grid-column: 2/3;
+    justify-self: end;
+}
+.hidden-t {
+    display: none;
+}
+.header button {
+    border-radius: 3rem;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    background-color: white;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+}
+.hamburger {
+    display: none;
+}
+.box2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.box2 div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content;
+}
+.box2 h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 3rem;
+    margin: 0;
+    color: hsl(212, 27%, 19%);
+}
+.box2 span {
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: hsl(212, 27%, 19%);
+    text-decoration-thickness: 0.25rem;
+}
+.a {
+    background-color: white;
+    padding: 10rem 7rem;
+}
+.a p {
+    color: hsl(210, 4%, 67%);
+}
+.a span {
+    text-decoration-color: hsl(51, 100%, 49%);
+}
+.d span {
+    text-decoration-color: hsl(7, 99%, 70%);
+}
+.d p {
+    color: hsl(210, 4%, 67%);
+}
+.d {
+    background-color: white;
+    padding: 10rem 7rem;
+}
+.b {
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 10rem 7rem;
+}
+.c {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 10rem 7rem;
+}
+.e {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 20rem 9rem 2rem;
+    color: hsl(167, 40%, 24%);
+}
+.e h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.f h3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.f {
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    padding: 20rem 9rem 2rem;
+    color: hsl(198, 62%, 26%);
+}
+.e, .f {
+    text-align: center;
+}
+.box3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 10rem;
+    grid-gap: 3rem;
+    text-align: center;
+    color: hsl(212, 27%, 19%);
+}
+.box3 div {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: white;
+    grid-template-rows: minmax(8rem, auto) minmax(10rem, auto) minmax(2rem, auto);
+}
+.box3 h2 {
+    grid-column: 1/4;
+    font-family: 'Fraunces', serif;
+    text-transform: uppercase;
+    color: rgb(25, 83, 107);
+    letter-spacing: 0.25rem;
+}
+.box3 img {
+    border-radius: 100%;
+    width: 5rem;
+}
+.name {
+    font-family: 'Fraunces', serif;
+    font-weight: 900;
+}
+.box4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.box4 img {
+    width: 100%;
+}
+.box5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    background-color: hsl(168, 52%, 75%);
+    grid-gap: 2rem;
+    padding: 5rem;
+}
+.logo {
+    filter: invert(60%) sepia(20%) saturate(1277%) hue-rotate(117deg) brightness(96%) contrast(84%);
+}
+.box5 span {
+    filter: invert(34%) sepia(20%) saturate(1277%) hue-rotate(117deg) brightness(96%) contrast(84%);
+}
+.box5 div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+}
+/*active state*/
+.header button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: hsl(191, 76%, 69%);
+}
+.box2 span:hover {
+    cursor: pointer;
+}
+.box5 span:hover{
+    cursor: pointer;
+    color: white;
+    filter: none;
+}
+.icon:hover{
+    cursor: pointer;
+    filter: invert(100%) sepia(0) saturate(0) hue-rotate(0) brightness(1) contrast(100);
+}
+.menu {
+    display: unset;
+    justify-self: end;
+    grid-template-columns: 1fr;
+    display: grid;
+    grid-gap: 1rem;
+    align-items: center;
+    justify-items: center;
+    background-color: white;
+    position: absolute;
+    top: 4rem;
+    width: 85%;
+    padding: 1rem;
+}
+/*responsive*/
+@media (max-width:1024px) and (min-width:768px) {
+    .box2 {
+        grid-template-columns: 1fr;
+    }
+    .b, .c {
+        padding: 20rem 0;
+    }
+    .b {
+        grid-row: 1/2;
+    }
+    .a, .d {
+        text-align: center;
+        padding: 10rem 0;
+    }
+    .e, .f {
+        padding: 25rem 0 3rem;
+    }
+    .box3 {
+        padding: 10rem 1rem;
+    }
+}
+@media (max-width:768px) {
+    .header {
+        padding: 1rem;
+    }
+    .header button {
+        background-color: hsl(51, 100%, 49%);
+        color: hsl(212, 27%, 19%);
+    }
+    .header span {
+        color: hsl(212, 27%, 19%);
+    }
+    .hidden {
+        display: none;
+    }
+    .box1 h1 {
+        font-size: 2rem;
+    }
+    .hamburger {
+        display: unset;
+        justify-self: end;
+    }
+    .box2 {
+        grid-template-columns: 1fr;
+    }
+    .b, .c {
+        padding: 10rem 0;
+    }
+    .b {
+        grid-row: 1/2;
+    }
+    .a, .d {
+        text-align: center;
+        padding: 5rem 0;
+    }
+    .e, .f {
+        padding: 25rem 0 3rem;
+    }
+    .box3 {
+        padding: 10rem 1rem;
+        grid-template-columns: 1fr;
+    }
+    .box3 h2 {
+        grid-column: 1/2;
+    }
+    .box4 {
+        grid-template-columns: 1fr 1fr;
+    }
+    .box5 {
+        padding: 5rem 0;
+    }
+}
